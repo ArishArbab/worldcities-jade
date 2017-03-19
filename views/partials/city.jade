@@ -1,0 +1,16 @@
+br
+br
+br
+.container
+  .row
+    .col-md-12
+      p.headingFont(align='center')
+       =headline
+br
+br
+.container
+  .row
+    - for(var i=1;i<=numberOfImages;i++)
+      .col-md-6
+        .thumbnail
+          img(src='/images/'+city+'/'+city+'-'+i+'.jpg')
